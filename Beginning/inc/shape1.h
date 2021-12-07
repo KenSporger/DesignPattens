@@ -2,8 +2,8 @@
 #define _SHAPE1_H
 
 #include<iostream>
-#include<config.h>
-#include<draw.h>
+#include<Beginning/inc/config.h>
+#include<Beginning/inc/draw.h>
 
 class Line
 {

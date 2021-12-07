@@ -7,21 +7,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 project(DesignPattens)
 
+include_directories(${PROJECT_SOURCE_DIR})
+
 add_executable(mainForm1 Beginning/src/mainForm1.cpp)
-target_include_directories(mainForm1 PRIVATE Beginning/inc)
 add_executable(mainForm2 Beginning/src/mainForm2.cpp)
-target_include_directories(mainForm2 PRIVATE Beginning/inc)
-
-add_executable(singleton Singleton/src/singleTonClient.cpp)
-target_include_directories(singleton PRIVATE Singleton/inc)
-target_link_libraries(singleton pthread)
-
-
-add_executable(factoryMethod Factory/src/factoryMethodClient.cpp)
-target_include_directories(factoryMethod PRIVATE Factory/inc)
-add_executable(simpleFactory Factory/src/simpleFactoryClient.cpp)
-target_include_directories(simpleFactory PRIVATE Factory/inc)
-
 
 
 
